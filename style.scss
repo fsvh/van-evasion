@@ -271,3 +271,93 @@ input[value="Souscrire"] {
   justify-content: center;
   font-size: 10px;
 }
+
+@media screen and (min-width: 992px) {
+  body {
+    display: flex;
+    justify-content: center;
+    background-color: $primary-bg;
+  }
+  .grid-container {
+    width: 100%;
+    max-width: 1200px;
+    border: solid 1px lightgrey;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 400px 150px 400px 400px 300px 150px 30px;
+    grid-template-areas:
+      "nav nav"
+      "main main"
+      "counter counter"
+      "section1 section1"
+      "section2 section2"
+      "testimonials testimonials"
+      "newsletter newsletter"
+      "footer footer";
+  }
+
+  label {
+    display: none;
+  }
+
+  .menu {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .link-items {
+    color: $primary-font;
+    text-decoration: none;
+    font-weight: 400;
+    opacity: 1;
+    transition: 0.5s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  .link-donation {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: $primary-font;
+    opacity: 1;
+    transition: 0.5s;
+
+    &:hover {
+      color: $primary-font;
+      opacity: 0.8;
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+  }
+
+  .main,
+  .section1,
+  .section2 {
+    grid-area: main;
+    display: flex;
+    height: 100%;
+  }
+
+  .text1,
+  .img1,
+  .text2,
+  .img2,
+  .text3,
+  .img3 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .section1 {
+    grid-area: section1;
+  }
+
+  .section2 {
+    grid-area: section2;
+  }
+}
