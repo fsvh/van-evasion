@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+$primary-bg: #f5f3f3;
+$secondary-bg: #ba8547;
+$lastly-bg: #9c9f93;
+$primary-font: #000000cb;
+$secondary-font: #ffffffcb;
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+}
+.grid-container {
+  width: 100vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 640px 150px 640px 640px 300px 150px 30px;
+  grid-template-areas:
+    "nav"
+    "main"
+    "counter"
+    "section1"
+    "section2"
+    "testimonials"
+    "newsletter"
+    "footer";
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+%img-section {
+  height: 390px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav {
+  padding-right: 16px;
+  grid-area: nav;
+  background-color: $primary-bg;
+  border-bottom: 1px solid lightgray;
+  @extend %flex-center;
+}
+
+#toggle,
+.menu {
+  display: none;
+}
+
+label {
+  color: $primary-font;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.5s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.main {
+  grid-area: main;
+  background-color: $primary-bg;
+}
+
+%flext-col-cen {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+}
+
+%p-setting {
+  line-height: 24px;
+  padding: 0 32px;
+  font-weight: 300;
+}
+
+.bx {
+  color: $primary-font;
+}
+
+.text1 {
+  @extend %flext-col-cen;
+  color: $primary-font;
+
+  p {
+    font-size: 18px;
+    @extend %p-setting;
+  }
+}
+
+.img1 {
+  background-color: $primary-bg;
+  background-image: url("/images/van1.png");
+  @extend %img-section;
+}
+
+#counter {
+  grid-area: counter;
+  background-color: $lastly-bg;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left-counter,
+.middle-counter,
+.right-counter {
+  text-align: center;
+  color: $primary-font;
+}
+
+.section1 {
+  grid-area: section1;
+  background-color: $secondary-bg;
+}
+
+.text2 {
+  @extend %flext-col-cen;
+  color: $secondary-font;
+
+  p {
+    font-size: 16px;
+    @extend %p-setting;
+  }
+}
+
+.img2 {
+  background-color: $primary-bg;
+  background-image: url("/images/van2.png");
+  @extend %img-section;
+}
+
+.section2 {
+  grid-area: section2;
+  background-color: $primary-bg;
+}
+
+.text3 {
+  @extend %flext-col-cen;
+  color: $primary-font;
+
+  p {
+    font-size: 16px;
+    @extend %p-setting;
+  }
+}
+
+.img3 {
+  background-color: $primary-bg;
+  background-image: url("/images/van3.png");
+  @extend %img-section;
+}
+
+#testimonials {
+  grid-area: testimonials;
+  background-color: $lastly-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text4 {
+  color: $primary-font;
+
+  p {
+    font-size: 16px;
+    @extend %p-setting;
+  }
+}
+
+.test-container {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 200;
+  font-size: 10px;
+}
+.left-counter,
+.middle-counter,
+.right-counter,
+.test-left,
+.test-middle,
+.test-right {
+  width: 30%;
+}
+
+#newsletter {
+  grid-area: newsletter;
+  background-color: $secondary-bg;
+  color: $secondary-font;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"] {
+  border-radius: 10px;
+  border: solid 1px #956a38;
+  background-color: #956a38;
+  padding-left: 10px;
+}
+
+input[type="text"]::placeholder {
+  color: $secondary-font;
+  font-size: 12px;
+}
+
+input[type="submit"] {
+  margin-left: 10px;
+  height: 30px;
+  padding: 0 10px 0 10px;
+  background-color: $primary-bg;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+  color: $primary-font;
+  font-weight: 600;
+}
+
+input[value="Souscrire"] {
+  color: $primary-font;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: $secondary-bg;
+  color: $secondary-font;
+  @extend %flex-center;
+  justify-content: center;
+  font-size: 10px;
+}
