@@ -363,11 +363,32 @@ input[value="Souscrire"] {
   .test-message3,
   .test-message4 {
     margin: 0;
-    width: 40%;
+    width: 43%;
   }
   .test-message1,
   .test-message2 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .grid-container {
+    width: 1024px;
+  }
+  .test-message1,
+  .test-message2,
+  .test-message3,
+  .test-message4 {
+    margin: 0;
+    width: 20%;
   }
 }
 /*# sourceMappingURL=style.css.map */
