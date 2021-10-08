@@ -31,6 +31,8 @@ h1 {
 h3 {
   font-size: 40px;
   font-weight: 600;
+  line-height: 2.5rem;
+  padding: 1rem 0 1rem 0;
 }
 
 .img1, .img2, .img3, .img4 {
@@ -115,6 +117,7 @@ label:hover {
 
 .text1 {
   color: #000000cb;
+  padding-bottom: 2rem;
 }
 
 .text1 p {
@@ -122,8 +125,7 @@ label:hover {
 }
 
 .img1 {
-  background-color: #f5f3f3;
-  background-image: url("/images/van1.png");
+  background-image: url("images/van1.png");
 }
 
 #counter {
@@ -142,9 +144,15 @@ label:hover {
 .left-counter,
 .middle-counter,
 .right-counter {
-  padding-top: 1rem;
+  padding-top: 0.6rem;
   text-align: center;
   color: #000000cb;
+}
+
+.left-counter p,
+.middle-counter p,
+.right-counter p {
+  line-height: 20px;
 }
 
 .section1 {
@@ -164,8 +172,7 @@ label:hover {
 }
 
 .img2 {
-  background-color: #f5f3f3;
-  background-image: url("/images/van2.png");
+  background-image: url("images/van2.png");
 }
 
 .section2 {
@@ -185,8 +192,7 @@ label:hover {
 }
 
 .img3 {
-  background-color: #f5f3f3;
-  background-image: url("/images/van3.png");
+  background-image: url("images/van3.png");
 }
 
 #testimonials {
@@ -267,8 +273,7 @@ label:hover {
 }
 
 .img4 {
-  background-color: #f5f3f3;
-  background-image: url("/images/van4.png");
+  background-image: url("images/van4.png");
 }
 
 #newsletter {
@@ -374,6 +379,7 @@ input[value="Souscrire"] {
   .middle-counter,
   .right-counter {
     padding-top: 0;
+    padding-bottom: 1rem;
   }
   #testimonials {
     width: 100%;

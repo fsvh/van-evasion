@@ -44,6 +44,8 @@ h1 {
 h3 {
   font-size: 40px;
   font-weight: 600;
+  line-height: 2.5rem;
+  padding: 1rem 0 1rem 0;
 }
 
 %img-section {
@@ -112,6 +114,7 @@ label {
 .text1 {
   @extend %flext-col-cen;
   color: $primary-font;
+  padding-bottom: 2rem;
 
   p {
     font-size: 18px;
@@ -120,8 +123,7 @@ label {
 }
 
 .img1 {
-  background-color: $primary-bg;
-  background-image: url("/images/van1.png");
+  background-image: url("images/van1.png");
   @extend %img-section;
 }
 
@@ -135,9 +137,12 @@ label {
 .left-counter,
 .middle-counter,
 .right-counter {
-  padding-top: 1rem;
+  padding-top: 0.6rem;
   text-align: center;
   color: $primary-font;
+  p {
+    line-height: 20px;
+  }
 }
 
 .section1 {
@@ -157,8 +162,7 @@ label {
 }
 
 .img2 {
-  background-color: $primary-bg;
-  background-image: url("/images/van2.png");
+  background-image: url("images/van2.png");
   @extend %img-section;
 }
 
@@ -179,8 +183,7 @@ label {
 }
 
 .img3 {
-  background-color: $primary-bg;
-  background-image: url("/images/van3.png");
+  background-image: url("images/van3.png");
   @extend %img-section;
 }
 
@@ -249,8 +252,7 @@ label {
 }
 
 .img4 {
-  background-color: $primary-bg;
-  background-image: url("/images/van4.png");
+  background-image: url("images/van4.png");
   @extend %img-section;
 }
 
@@ -323,6 +325,7 @@ input[value="Souscrire"] {
   .middle-counter,
   .right-counter {
     padding-top: 0;
+    padding-bottom: 1rem;
   }
 
   #testimonials {
