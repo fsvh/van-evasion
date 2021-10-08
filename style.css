@@ -344,6 +344,16 @@ input[value="Souscrire"] {
 }
 
 @media screen and (min-width: 768px) {
+  #counter {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .left-counter,
+  .middle-counter,
+  .right-counter {
+    padding-top: 0;
+  }
   #testimonials {
     width: 100%;
   }
@@ -369,6 +379,10 @@ input[value="Souscrire"] {
   .test-message2 {
     margin-bottom: 1rem;
   }
+  .test-message3,
+  .test-message4 {
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -383,11 +397,31 @@ input[value="Souscrire"] {
   .grid-container {
     width: 1024px;
   }
+  .img1,
+  .img2,
+  .img3 {
+    height: 600px;
+  }
+  .toggle,
+  label {
+    display: none;
+  }
+  .menu {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .menu a {
+    text-decoration: none;
+    color: #000000cb;
+  }
   .test-message1,
   .test-message2,
   .test-message3,
   .test-message4 {
-    margin: 0;
     width: 20%;
   }
 }
