@@ -18,9 +18,9 @@ body {
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  -ms-grid-rows: 60px auto 150px auto auto auto 150px 30px;
-      grid-template-rows: 60px auto 150px auto auto auto 150px 30px;
-      grid-template-areas: "nav" "main" "counter" "section1" "section2" "testimonials" "newsletter" "footer";
+  -ms-grid-rows: 60px auto 150px auto auto auto auto 150px 30px;
+      grid-template-rows: 60px auto 150px auto auto auto auto 150px 30px;
+      grid-template-areas: "nav" "main" "counter" "section1" "section2" "donation" "testimonials" "newsletter" "footer";
 }
 
 h1 {
@@ -33,7 +33,7 @@ h3 {
   font-weight: 600;
 }
 
-.img1, .img2, .img3 {
+.img1, .img2, .img3, .img4 {
   height: 390px;
   background-position: center;
   background-repeat: no-repeat;
@@ -86,7 +86,7 @@ label:hover {
   background-color: #f5f3f3;
 }
 
-.text1, .text2, .text3 {
+.text1, .text2, .text3, .text5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,7 +103,7 @@ label:hover {
   padding: 1rem 0;
 }
 
-.text1 p, .text2 p, .text3 p, .text4 p {
+.text1 p, .text2 p, .text3 p, .text4 p, .text5 p {
   line-height: 24px;
   padding: 0 2rem;
   font-weight: 300;
@@ -190,7 +190,7 @@ label:hover {
 }
 
 #testimonials {
-  -ms-grid-row: 6;
+  -ms-grid-row: 7;
   -ms-grid-column: 1;
   grid-area: testimonials;
   background-color: #9c9f93;
@@ -250,8 +250,29 @@ label:hover {
   padding: 2rem 1rem;
 }
 
+.donation {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: donation;
+  background-color: #825448;
+}
+
+.text5 {
+  color: #ffffffcb;
+  padding-bottom: 2rem;
+}
+
+.text5 p {
+  font-size: 18px;
+}
+
+.img4 {
+  background-color: #f5f3f3;
+  background-image: url("/images/van4.png");
+}
+
 #newsletter {
-  -ms-grid-row: 7;
+  -ms-grid-row: 8;
   -ms-grid-column: 1;
   grid-area: newsletter;
   background-color: #ba8547;
@@ -332,7 +353,7 @@ input[value="Souscrire"] {
 }
 
 .footer {
-  -ms-grid-row: 8;
+  -ms-grid-row: 9;
   -ms-grid-column: 1;
   grid-area: footer;
   background-color: #ba8547;
@@ -399,8 +420,9 @@ input[value="Souscrire"] {
   }
   .img1,
   .img2,
-  .img3 {
-    height: 600px;
+  .img3,
+  .img4 {
+    height: 640px;
   }
   .toggle,
   label {
