@@ -211,19 +211,19 @@ label {
   font-weight: 200;
   font-size: 12px;
 }
+
 .left-counter,
 .middle-counter,
 .right-counter {
   width: 30%;
 }
 
-.test-left,
-.test-middle,
-.test-right {
+.test-message1,
+.test-message2,
+.test-message3,
+.test-message4 {
   width: 100%;
   height: auto;
-  display: flex;
-  flex-direction: column;
   background-color: $primary-bg;
   margin: 0 1rem 1rem 1rem;
   border-radius: 0.4rem;
@@ -288,6 +288,32 @@ input[value="Souscrire"] {
   @extend %flex-center;
   justify-content: center;
   font-size: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  #testimonials {
+    width: 100%;
+  }
+
+  .test-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .test-message1,
+  .test-message2,
+  .test-message3,
+  .test-message4 {
+    margin: 0;
+    width: 40%;
+  }
+
+  .test-message1,
+  .test-message2 {
+    margin-bottom: 2rem;
+  }
 }
 
 // @media screen and (min-width: 992px) {
