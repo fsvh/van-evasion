@@ -21,7 +21,7 @@ body {
       grid-template-columns: 100%;
   -ms-grid-rows: 60px auto 150px auto auto auto auto 150px 30px;
       grid-template-rows: 60px auto 150px auto auto auto auto 150px 30px;
-      grid-template-areas: "nav" "main" "counter" "section1" "section2" "donation" "testimonials" "newsletter" "footer";
+      grid-template-areas: "nav" "main" "counter" "about" "contact" "donation" "testimonials" "newsletter" "footer";
 }
 
 h1 {
@@ -133,7 +133,7 @@ label:hover {
   background-image: url("images/van1.jpg");
 }
 
-#counter {
+.counter {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: counter;
@@ -160,10 +160,10 @@ label:hover {
   line-height: 20px;
 }
 
-.section1 {
+.about {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
-  grid-area: section1;
+  grid-area: about;
   background-color: #ba8547;
 }
 
@@ -180,10 +180,10 @@ label:hover {
   background-image: url("images/van2.jpg");
 }
 
-.section2 {
+.contact {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
-  grid-area: section2;
+  grid-area: contact;
   background-color: #f5f3f3;
 }
 
@@ -200,7 +200,7 @@ label:hover {
   background-image: url("images/van3.jpg");
 }
 
-#testimonials {
+.testimonials {
   -ms-grid-row: 7;
   -ms-grid-column: 1;
   grid-area: testimonials;
@@ -281,7 +281,7 @@ label:hover {
   background-image: url("images/van4.jpg");
 }
 
-#newsletter {
+.newsletter {
   -ms-grid-row: 8;
   -ms-grid-column: 1;
   grid-area: newsletter;
@@ -403,7 +403,7 @@ input[value="Souscrire"] {
   .bxs-chevron-up-circle {
     color: #000000cb;
   }
-  #counter {
+  .counter {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -414,7 +414,7 @@ input[value="Souscrire"] {
     padding-top: 0;
     padding-bottom: 1rem;
   }
-  #testimonials {
+  .testimonials {
     width: 100%;
   }
   .test-container {

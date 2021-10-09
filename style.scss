@@ -31,8 +31,8 @@ body {
     "nav"
     "main"
     "counter"
-    "section1"
-    "section2"
+    "about"
+    "contact"
     "donation"
     "testimonials"
     "newsletter"
@@ -134,7 +134,7 @@ label {
   @extend %img-section;
 }
 
-#counter {
+.counter {
   grid-area: counter;
   background-color: $lastly-bg;
   display: flex;
@@ -152,8 +152,8 @@ label {
   }
 }
 
-.section1 {
-  grid-area: section1;
+.about {
+  grid-area: about;
   background-color: $secondary-bg;
 }
 
@@ -173,8 +173,8 @@ label {
   @extend %img-section;
 }
 
-.section2 {
-  grid-area: section2;
+.contact {
+  grid-area: contact;
   background-color: $primary-bg;
 }
 
@@ -194,7 +194,7 @@ label {
   @extend %img-section;
 }
 
-#testimonials {
+.testimonials {
   grid-area: testimonials;
   background-color: $lastly-bg;
   padding: 1rem 0;
@@ -263,7 +263,7 @@ label {
   @extend %img-section;
 }
 
-#newsletter {
+.newsletter {
   grid-area: newsletter;
   background-color: $secondary-bg;
   color: $secondary-font;
@@ -355,7 +355,7 @@ input[value="Souscrire"] {
     color: $primary-font;
   }
 
-  #counter {
+  .counter {
     align-items: center;
   }
 
@@ -366,7 +366,7 @@ input[value="Souscrire"] {
     padding-bottom: 1rem;
   }
 
-  #testimonials {
+  .testimonials {
     width: 100%;
   }
 
@@ -409,8 +409,6 @@ input[value="Souscrire"] {
       0 1px 1px hsl(0,0,19 / 0.23),
       0 2px 2px hsl(0,0,19 / 0.23),
       0 4px 4px hsl(0,0,19 / 0.23),
-      // 0 8px 8px hsl(0,0,19 / 0.23),
-      // 0 16px 16px hsl(0,0,19 / 0.23),
   }
 
   .img1,
