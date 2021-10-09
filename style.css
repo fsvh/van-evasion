@@ -89,6 +89,10 @@ label:hover {
   background-color: #f5f3f3;
 }
 
+.scroll-to-top-wrapper {
+  display: none;
+}
+
 .text1, .text2, .text3, .text5 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,6 +375,34 @@ input[value="Souscrire"] {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    position: relative;
+  }
+  .scroll-to-top-wrapper {
+    display: inherit;
+    position: absolute;
+    z-index: 1;
+    top: 100vh;
+    right: 2.6rem;
+    bottom: 1.6rem;
+    width: 3em;
+    pointer-events: none;
+    opacity: 1;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+  .scroll-to-top-wrapper:hover {
+    opacity: 0.8;
+  }
+  .scroll-to-top-link {
+    position: -webkit-sticky;
+    position: sticky;
+    pointer-events: all;
+    top: calc(100vh - 5rem);
+  }
+  .bxs-chevron-up-circle {
+    color: #000000cb;
+  }
   #counter {
     -webkit-box-align: center;
         -ms-flex-align: center;
