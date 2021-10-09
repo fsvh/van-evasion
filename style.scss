@@ -400,10 +400,17 @@ input[value="Souscrire"] {
   body {
     display: flex;
     justify-content: center;
+    background-color: $primary-bg;
   }
 
   .grid-container {
     width: 1024px;
+    box-shadow:
+      0 1px 1px hsl(0,0,19 / 0.23),
+      0 2px 2px hsl(0,0,19 / 0.23),
+      0 4px 4px hsl(0,0,19 / 0.23),
+      // 0 8px 8px hsl(0,0,19 / 0.23),
+      // 0 16px 16px hsl(0,0,19 / 0.23),
   }
 
   .img1,

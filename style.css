@@ -453,9 +453,12 @@ input[value="Souscrire"] {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    background-color: #f5f3f3;
   }
   .grid-container {
     width: 1024px;
+    -webkit-box-shadow: 0 1px 1px lightgray, 0 2px 2px lightgray, 0 4px 4px lightgray;
+            box-shadow: 0 1px 1px lightgray, 0 2px 2px lightgray, 0 4px 4px lightgray;
   }
   .img1,
   .img2,
