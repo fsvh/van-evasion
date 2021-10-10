@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
     <style>
+      /* mobile first */
       .grid-container {
         width: 100%;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 60px auto auto 150px 30px;
+        grid-template-rows: 60px auto auto auto 30px;
         grid-template-areas:
           "nav"
           "main"
@@ -21,6 +22,8 @@
           "newsletter"
           "footer";
       }
+
+      /* laptop 1024px */
       @media screen and (min-width: 1024px) {
         .grid-container {
           width: 1024px;
@@ -71,7 +74,6 @@
             <b>12 mars 2021:</b><br />
             Une brocante avec des animations sera organisée, venez en famille.
           </li>
-          <br />
         </ul>
       </div>
       <div class="newsletter">

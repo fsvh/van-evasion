@@ -19,8 +19,8 @@ body {
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  -ms-grid-rows: 60px auto 150px auto auto auto auto 150px 30px;
-      grid-template-rows: 60px auto 150px auto auto auto auto 150px 30px;
+  -ms-grid-rows: 60px auto 150px auto auto auto auto auto 30px;
+      grid-template-rows: 60px auto 150px auto auto auto auto auto 30px;
       grid-template-areas: "nav" "main" "counter" "about" "contact" "donation" "testimonials" "newsletter" "footer";
 }
 
@@ -277,6 +277,24 @@ label:hover {
   font-size: 16px;
 }
 
+.btn-donation {
+  margin: auto;
+  width: auto;
+  padding: 10px 0;
+  color: #000000cb;
+  background-color: #ffffffcb;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-donation:hover {
+  opacity: 0.8;
+}
+
 .img4 {
   background-image: url("images/van4.jpg");
 }
@@ -287,7 +305,7 @@ label:hover {
 
 .event-date {
   grid-area: event-date;
-  padding: 0 1rem;
+  padding: 1rem 1rem 2rem 1rem;
   background-color: #9c9f93;
   text-align: center;
 }
@@ -312,6 +330,7 @@ label:hover {
   grid-area: newsletter;
   background-color: #ba8547;
   color: #ffffffcb;
+  padding: 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
