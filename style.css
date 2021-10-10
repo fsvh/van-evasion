@@ -57,12 +57,44 @@ h2 {
 }
 
 .nav {
-  padding-right: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0 16px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: nav;
   background-color: #f5f3f3;
   border-bottom: 1px solid lightgray;
+}
+
+.social-links {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.social-links a {
+  padding-right: 1rem;
+}
+
+.social-links .bx {
+  color: grey;
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.social-links .bx:hover {
+  opacity: 0.5;
 }
 
 #toggle,
@@ -71,6 +103,13 @@ h2 {
 }
 
 label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 50%;
   color: #000000cb;
   cursor: pointer;
   opacity: 1;
@@ -165,6 +204,7 @@ label:hover {
   -ms-grid-column: 1;
   grid-area: about;
   background-color: #ba8547;
+  scroll-margin-top: 60px;
 }
 
 .text2 {
@@ -185,6 +225,7 @@ label:hover {
   -ms-grid-column: 1;
   grid-area: contact;
   background-color: #f5f3f3;
+  scroll-margin-top: 60px;
 }
 
 .text3 {
@@ -266,6 +307,7 @@ label:hover {
   -ms-grid-column: 1;
   grid-area: donation;
   background-color: #825448;
+  scroll-margin-top: 60px;
 }
 
 .text5 {

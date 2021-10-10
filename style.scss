@@ -22,6 +22,7 @@ body {
   width: 100%;
   height: auto;
 }
+
 .grid-container {
   width: 100%;
   display: grid;
@@ -66,11 +67,35 @@ h2 {
 }
 
 .nav {
-  padding-right: 16px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0 16px;
   grid-area: nav;
   background-color: $primary-bg;
   border-bottom: 1px solid lightgray;
   @extend %flex-center;
+}
+
+.social-links {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+
+  & a {
+    padding-right: 1rem;
+  }
+
+  & .bx {
+    color: grey;
+    opacity: 1;
+    transition: 0.5s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
 }
 
 #toggle,
@@ -79,6 +104,9 @@ h2 {
 }
 
 label {
+  display: flex;
+  justify-content: end;
+  width: 50%;
   color: $primary-font;
   cursor: pointer;
   opacity: 1;
@@ -155,6 +183,7 @@ label {
 .about {
   grid-area: about;
   background-color: $secondary-bg;
+  scroll-margin-top: 60px;
 }
 
 .text2 {
@@ -176,6 +205,7 @@ label {
 .contact {
   grid-area: contact;
   background-color: $primary-bg;
+  scroll-margin-top: 60px;
 }
 
 .text3 {
@@ -245,6 +275,7 @@ label {
 .donation {
   grid-area: donation;
   background-color: $donation-bg;
+  scroll-margin-top: 60px;
 }
 
 .text5 {
