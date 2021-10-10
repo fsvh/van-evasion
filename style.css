@@ -36,7 +36,7 @@ h2 {
   padding: 1rem 0 1rem 0;
 }
 
-.img1, .img2, .img3, .img4 {
+.img1, .img2, .img3, .img4, .img-events {
   height: 390px;
   background-position: center;
   background-repeat: no-repeat;
@@ -281,8 +281,15 @@ label:hover {
   background-image: url("images/van4.jpg");
 }
 
+.img-events {
+  background-image: url("images/img-events.jpg");
+}
+
 .event-date {
+  grid-area: event-date;
   padding: 0 1rem;
+  background-color: #9c9f93;
+  text-align: center;
 }
 
 .event-date h2 {
@@ -482,7 +489,7 @@ input[value="Souscrire"] {
   .img1,
   .img2,
   .img3,
-  .img4 {
+  .img4 .img-events {
     height: 640px;
   }
   #check {

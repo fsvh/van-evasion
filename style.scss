@@ -94,7 +94,7 @@ label {
   background-color: $primary-bg;
 }
 
-.scroll-to-top-wrapper{
+.scroll-to-top-wrapper {
   display: none;
 }
 
@@ -263,8 +263,16 @@ label {
   @extend %img-section;
 }
 
+.img-events {
+  background-image: url("images/img-events.jpg");
+  @extend %img-section;
+}
+
 .event-date {
+  grid-area: event-date;
   padding: 0 1rem;
+  background-color: $lastly-bg;
+  text-align: center;
 
   & h2 {
     color: $primary-font;
@@ -424,18 +432,14 @@ input[value="Souscrire"] {
 
   .grid-container {
     width: 1024px;
-    box-shadow:
-      0 1px 1px hsl(0,0,19 / 0.21),
-      0 2px 2px hsl(0,0,19 / 0.21),
-      0 4px 4px hsl(0,0,19 / 0.21),
-      0 8px 8px hsl(0,0,19 / 0.21),
-      0 6px 16px hsl(0,0,19 / 0.21);
+    box-shadow: 0 1px 1px hsl(0, 0, 19 / 0.21), 0 2px 2px hsl(0, 0, 19 / 0.21), 0 4px 4px hsl(0, 0, 19 / 0.21), 0 8px 8px hsl(0, 0, 19 / 0.21),
+      0 6px 16px hsl(0, 0, 19 / 0.21);
   }
 
   .img1,
   .img2,
   .img3,
-  .img4 {
+  .img4 .img-events {
     height: 640px;
   }
 
@@ -460,5 +464,4 @@ input[value="Souscrire"] {
   .test-message4 {
     width: 20%;
   }
-
 }
