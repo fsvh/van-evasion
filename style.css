@@ -281,6 +281,24 @@ label:hover {
   background-image: url("images/van4.jpg");
 }
 
+.event-date {
+  padding: 0 1rem;
+}
+
+.event-date h2 {
+  color: #000000cb;
+}
+
+.event-date li {
+  list-style: none;
+  color: #000000cb;
+}
+
+.event-date b {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
 .newsletter {
   -ms-grid-row: 8;
   -ms-grid-column: 1;
@@ -303,6 +321,7 @@ label:hover {
 }
 
 form {
+  height: 100%;
   padding: 0.6rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -466,8 +485,7 @@ input[value="Souscrire"] {
   .img4 {
     height: 640px;
   }
-  .toggle,
-  label {
+  #check {
     display: none;
   }
   .menu {
