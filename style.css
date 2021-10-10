@@ -320,8 +320,7 @@ label:hover {
 }
 
 .event-date b {
-  text-decoration: underline;
-  text-underline-offset: 5px;
+  font-size: 20px;
 }
 
 .newsletter {
@@ -487,6 +486,23 @@ input[value="Souscrire"] {
   .test-message3,
   .test-message4 {
     margin-bottom: 1rem;
+  }
+  .event-date ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .event-date li {
+    width: 30%;
   }
 }
 

@@ -301,8 +301,7 @@ label {
   }
 
   & b {
-    text-decoration: underline;
-    text-underline-offset: 5px;
+    font-size: 20px;
   }
 }
 
@@ -438,6 +437,19 @@ input[value="Souscrire"] {
   .test-message3,
   .test-message4 {
     margin-bottom: 1rem;
+  }
+
+  .event-date {
+    & ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    & li {
+      width: 30%;
+    }
   }
 }
 
