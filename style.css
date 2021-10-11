@@ -127,7 +127,7 @@ h2 {
 }
 
 .menu a {
-  padding-bottom: 4rem;
+  padding: 1rem 0 3rem 0;
   color: #000000cb;
   text-decoration: none;
 }
@@ -634,7 +634,7 @@ input[value="Souscrire"] {
   .menu a {
     text-decoration: none;
     color: #000000cb;
-    padding-bottom: 1rem;
+    padding: 0 0 1rem 0;
     opacity: 1;
     -webkit-transition: 0.5s;
     transition: 0.5s;

@@ -119,7 +119,7 @@ h2 {
   border-bottom: 1px solid lightgray;
 
   & a {
-    padding-bottom: 4rem;
+    padding: 1rem 0 3rem 0;
     color: $primary-font;
     text-decoration: none;
   }
@@ -546,7 +546,7 @@ input[value="Souscrire"] {
     a {
       text-decoration: none;
       color: $primary-font;
-      padding-bottom: 1rem;
+      padding: 0 0 1rem 0;
       opacity: 1;
       transition: 0.5s;
     }
